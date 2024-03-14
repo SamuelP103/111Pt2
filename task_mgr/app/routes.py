@@ -2,11 +2,15 @@ from flask import Flask, request
 from app.database import task
 
 
+
+
 app = Flask(__name__)
 
+
+
 @app.get ("/tasks")
-def get_all_tasks() :
-    task_list = task.scan ()
+def get_all_tasks():
+    task_list = task.scan()
     out = {
         "tasks": task_list,
         "ok": True

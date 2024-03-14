@@ -1,4 +1,4 @@
 export FLASK_APP=app/routes.py
-export FLAK_ENV=development
+export FLASK_ENV=development
 
-flask run --debug
+flask run -p 5003 --debug
