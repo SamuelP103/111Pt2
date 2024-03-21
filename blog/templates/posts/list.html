@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Posts{% endblock title %}
+
+{% block content %}
+<style>
+    
+    .posts{
+        
+        color: rgba(54, 50, 158, 0.777) !important;
+    
+    }
+    body {
+        background-color: #b2b2b28e; 
+
+      }
+    img {
+      width: 30%;
+
+      display: block;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      color: #333; 
+      text-align: center;
+    }
+    
+    p {
+      color: #667; 
+      text-align: center;
+    }
+  </style>
+<h1>Posts</h1>
+<div class="posts">
+    <ul>
+        {% for post in post_list %}
+        <li>
+            <a href="{% url 'detail' post.id %}"  class="posts">{{ post.title }}</a>
+        </li>
+    </ul>
+</div>
+
+
+
+{% endfor %}
+{% endblock content %}
