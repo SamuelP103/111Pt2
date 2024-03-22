@@ -10,5 +10,7 @@
 <h3>{{ post.subtitle }}</h3>
 <small> By {{ post.author }} | On: {{ post.created_on }}</small>
 <p>{{ post.body }}</p>
+<a href="{% url 'edit' post.id %}" class="btn btn-primary">Edit</a>
+<a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
 
 {% endblock content %}
