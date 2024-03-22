@@ -5,6 +5,36 @@
 
 
 {% block content %}
+<style>
+    
+    .posts{
+        
+        color: rgba(54, 50, 158, 0.777) !important;
+    
+    }
+    body {
+        background-color: #b2b2b28e; 
+        
+
+      }
+    img {
+      width: 30%;
+
+      display: block;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      color: #333; 
+      text-align: center;
+    }
+    
+    p {
+      color: #667; 
+      text-align: center;
+    }
+ 
+  </style>
 <form method="Post">
     {% csrf_token %}
     {{ form.as_p }}
