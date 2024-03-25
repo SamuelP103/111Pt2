@@ -10,4 +10,5 @@ urlpatterns = [
     path("<int:pk>/delete/", views.PostDeleteView.as_view(), name="delete"),
     path("password_change/", views.PasswordChangeView.as_view(), name="password_change"),
     path("password_change/done/",views.PasswordChangeDoneView.as_view(), name="password_change_done"),
+    # path("password_reset_form",views.PasswordResetView.as_view(), name="password_reset"),
 ]

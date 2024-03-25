@@ -63,5 +63,8 @@ class PasswordChangeView(UpdateView):
 class PasswordChangeDoneView(UpdateView):
     email_template_name = "registration/password_reset_email.html"
 
+# class PasswordResetView(UpdateView):
+#     reset_template = "registration/password_reset_form.html"
+
 
 
