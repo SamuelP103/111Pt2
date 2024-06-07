@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="list">
+
+
+
+    <div>
+        <a href="{% url 'create' %}" class="btn btn-primary">Create Post</a>
+    </div>
+
+
+<div class="postBox">
+        {% for record in posts %}
+        <div class="record">
+        <h5><a href="{% url 'detail' record.id %}">{{record.title}}</a></h5>
+        <p>{{record.content}}</p>
+    </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
