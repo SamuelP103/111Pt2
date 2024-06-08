@@ -224,14 +224,15 @@ img {
     }
 
     .list {
-        background-color: #f8f9fa;
+        background-color: #6c6c6c;
         padding: 20px;
         margin: 20px;
+        border-radius: 6px;
     }
     
     .list .record {
-        background-color: #fff;
-        border: 1px solid #dee2e6;
+        background-color: rgb(223, 223, 223);
+        border: 1px solid #777777;
         border-radius: 5px;
         padding: 10px;
         margin-bottom: 10px;
@@ -261,21 +262,24 @@ img {
     }
     
     .btn-primary {
-        color: #fff;
-        background-color: #007bff;
-        border-color: #007bff;
+        color: #e2e2e2;
+        background-color: #414141;
+        border-color: #4a4a4a;
+        border-radius: 6px;
     }
     
     .btn-primary:hover {
-        color: #fff;
-        background-color: #0056b3;
-        border-color: #0056b3;
+        color: #e2e2e2;
+        background-color: #23272b;
+        border-color: #ffffff;
+        border-radius: 6px;
     }
-    -----------
+
     .detail {
-        background-color: #f8f9fa;
+        background-color: rgb(211, 211, 211);
         padding: 20px;
         margin: 20px;
+        border-radius: 6px;
     }
     
     .detail h1 {
@@ -296,4 +300,12 @@ img {
     .detail .btn-primary {
         margin-bottom: 20px;
     }
-    
+    .postBox{
+        color: black !important;
+    }
+    .black{
+        color: rgb(40, 40, 40);
+    }
+    .purpleLink{
+        color: #6604c8;
+    }
